@@ -1,0 +1,81 @@
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Editors / IDE ----------
+.vscode/
+.idea/
+.fleet/
+*.swp
+
+# ---------- Env & secrets (keep .env.example tracked) ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Logs & temp ----------
+*.log
+logs/
+log/
+tmp/
+temp/
+.cache/
+.nyc_output/
+
+# ---------- Python / Backend ----------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
+sdist/
+var/
+parts/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+pip-log.txt
+pip-delete-this-directory.txt
+.python-version
+.venv/
+venv/
+env/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Local dev/test databases (we use Postgres in Docker, but ignore safety)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Alembic: DO NOT ignore migrations (keep versions in git)
+# (Intentionally no ignore rule for backend/alembic/)
+
+# ---------- Node / Frontend (SvelteKit + Vite) ----------
+node_modules/
+.svelte-kit/
+.vite/
+build/
+coverage/
+.eslintcache
+
+# Common platform dirs (only if you ever try them; safe to ignore)
+frontend/.vercel/
+frontend/.netlify/
+frontend/.output/
+
+# ---------- Docker & local volumes ----------
+db_data/
+docker-data/
+
+# ---------- Keep Dev Container tracked ----------
+# (No ignore for .devcontainer — commit that folder)
